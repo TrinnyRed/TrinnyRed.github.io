@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Atkinson Hyperlegible';
+    src: url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 76px;
+    background-color: #F9E0C8;
+    border-bottom: solid 1px #F5CCA3;
+    font-family: 'Atkinson Hyperlegible', Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+#Logo-main {
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    left: 24px;
+    top: 24px;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F8F7F2;
+    font-family: 'Atkinson Hyperlegible', Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #F1B67E;
+    width: 100%;
+    height: 76px;
+}
+
+h1 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.eyebrow-text {
+    font-family: 'Atkinson Hyperlegible', Arial, Helvetica, sans-serif;
+    font-size: small;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-family: 'Atkinson Hyperlegible', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+.article-select {
+    display: flex;
+    padding: 8px;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/*
+.article-preview:hover {
+    border-bottom: 1px solid black;
+}
+*/
+
+.thumbnail {
+    margin: 0px;
+    padding: 8px;
+    width: 50px;
+    height: 50px;
+    background-color: #DA6C6C;
+    border-radius: 4px;
+    border: 1px solid #C23131;
+}
+
+.article-preview {
+    display:inline-block;
+    margin: 0px;
+    padding: 0px 0px 0px 4px; 
+    width: 600px;
+    height: 100%;
+}
+
+section {
+    display: flex;
+    width: 700px;
+    flex-direction: column;
+    margin: auto auto;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 30px;
+
+}
+
+hr {
+    width: 700px;
+    margin: 0px auto;
+    
+}
+
+.MainMenuItem {
+    width: 70px;
+    height: 20px;
+    padding: 20px;
+    margin: 10px 5px;
+    text-align: center;
+}
+
+.MainMenuItem a {
+    text-decoration: none;
+    color: black;
+}
+
+.PrimaryButton {
+    text-decoration: none;
+    color: white;
+    width: 70px;
+    height: 20px;
+    padding: 10px;
+    margin: 20px 25px;
+    background-color: #C23131;
+    text-align: center;
+    border-radius: 5px;
+}
