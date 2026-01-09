@@ -3,12 +3,10 @@
     src: url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 }
 
-
 nav {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
     width: 100%;
+    display: flex;
+    flex-direction: row;
     height: 76px;
     background-color: #F9E0C8;
     border-bottom: solid 1px #F5CCA3;
@@ -16,37 +14,89 @@ nav {
     font-size: small;
 }
 
+#nav1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#nav2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
 #Logo-main {
     width: 200px;
     height: 30px;
-    position: absolute;
+    /* position: absolute;
     left: 24px;
-    top: 24px;
+    top: 24px; */
+    padding-top: 24px;
+    padding-left: 24px;
+    content: url("mtrnq_logo.svg");
 }
 
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
     background-color: #F8F7F2;
     font-family: 'Atkinson Hyperlegible', Arial, Helvetica, sans-serif;
-    margin: 0px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 700px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.wrapper {
+    /* display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0px; */
+    margin: 0px auto;
 }
 
 footer {
-    margin-top: auto;
+    display: block;
+    margin-top: auto;    
     background-color: #F1B67E;
+    padding: 0px;
     width: 100%;
-    height: 76px;
+    height: 70px;
+}
+
+footer>p {
+    width: 100%;
+    height: 0px;
+    position: relative;
+    top: 30px;
+    margin: 0px;
+    padding: 0px;
+    font-size: small;
+    text-align: center;    
+    color:#421010;
 }
 
 h1 {
+    height: 100%;
+    width: 100%;
     margin-bottom: 0px;
     margin-top: 0px;
 }
 
 p {
+    height: 100%;
+    width: 100%;
     line-height: 1.5em;
 }
 
@@ -62,19 +112,27 @@ p {
     margin-left: 16px;
 }
 
-.article-select {
-    display: flex;
-    padding: 8px;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-}
-
 /*
 .article-preview:hover {
     border-bottom: 1px solid black;
 }
 */
+
+section {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 30px;
+    margin: auto;
+}
+
+.article-select {
+    display: flex;
+    padding-left: 8px;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
 
 .thumbnail {
     margin: 0px;
@@ -87,26 +145,16 @@ p {
 }
 
 .article-preview {
-    display:inline-block;
+    display: block;
     margin: 0px;
     padding: 0px 0px 0px 4px; 
-    width: 600px;
+    width: 100%;
     height: 100%;
 }
 
-section {
-    display: flex;
-    width: 700px;
-    flex-direction: column;
-    margin: auto auto;
-    padding-left: 0%;
-    padding-right: 0%;
-    padding-top: 30px;
-
-}
 
 hr {
-    width: 700px;
+    width: 100%;
     margin: 0px auto;
     
 }
@@ -117,21 +165,57 @@ hr {
     padding: 20px;
     margin: 10px 5px;
     text-align: center;
+    line-height: 20px;
 }
 
-.MainMenuItem a {
+.active-link {
     text-decoration: none;
     color: black;
 }
 
-.PrimaryButton {
+.active-link:hover {
+    text-decoration-line: underline;
+}
+
+.disabled-link {
     text-decoration: none;
-    color: white;
+    color: gray;
+}
+
+.PrimaryButton-disabled {
+    text-decoration: none;
+    color: gray;
     width: 70px;
     height: 20px;
     padding: 10px;
-    margin: 20px 25px;
-    background-color: #C23131;
+    margin: 20px 20px;
+    background-color: lightgray;
     text-align: center;
+    line-height: 20px;
+    border: 1px solid #421010;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 650px) {
+  /* main {
+    width: calc(100vw - 8px);
+  } */
+    #Logo-main {
+    width: 60px;
+    height: 30px;
+    /* position: absolute;
+    left: 24px;
+    top: 24px; */
+    padding-top: 24px;
+    padding-left: 24px;
+    content: url("mtrnq_logo_butterfly.svg");
+    }
+    main {
+        width: 100vw;
+    }
+}
+@media screen and (max-width: 460px) {
+    .MainMenuItem {
+        padding: 20px 0px;
+    }
 }

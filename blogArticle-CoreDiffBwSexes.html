@@ -10,26 +10,29 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     </head>
-
-    <header>
-        <nav>
-            <div class="PrimaryButton">
-                <a>Subscribe</a>
-            </div>
-              <div class="MainMenuItem">
-                <a>Webcomic</a>
-            </div>
-            <div class="MainMenuItem">
-                <a href="BLOG-Select.html">Blog</a>
-            </div>
-          
-            <div>
-                <a href="index.html"><img id="Logo-main" src="mtrnq_logo.svg"></a>
-            </div>
-
-        </nav>
-    </header>
-    <body>
+   <body>
+    <div class="wrapper">
+            <header>
+                <nav>
+                    <div id="nav1">
+                        <a href="index.html" id="Logo-main">
+                            <!-- <img id="Logo-main" src="mtrnq_logo.svg"> -->
+                        </a>
+                    </div>
+                    <div id="nav2">
+                        <div class="MainMenuItem">
+                        <a class="active-link" href="BLOG-Select.html">Blog</a>
+                        </div>
+                        <div class="MainMenuItem">
+                        <a class="disabled-link">Webcomic</a>
+                        </div>
+                        <div class="PrimaryButton-disabled">
+                        <a>Subscribe</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+ <main>
        <section>
         <p class="eyebrow-text">
             GOAL: PERSPECTIVE
@@ -82,6 +85,7 @@ They're just as weird, flawed, and fascinating as you.  You'll find a lot more i
         </ol>
        
        </section>
-      
+      </main>
     </body>
+    </div>
 </html>
