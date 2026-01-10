@@ -31,9 +31,6 @@ nav {
 #Logo-main {
     width: 200px;
     height: 30px;
-    /* position: absolute;
-    left: 24px;
-    top: 24px; */
     padding-top: 24px;
     padding-left: 24px;
     content: url("mtrnq_logo.svg");
@@ -136,12 +133,17 @@ section {
 
 .thumbnail {
     margin: 0px;
-    padding: 8px;
+    padding: 0px;
     width: 50px;
     height: 50px;
-    background-color: #DA6C6C;
+    /* background-color: #DA6C6C; */
     border-radius: 4px;
-    border: 1px solid #C23131;
+    border: 1px solid #F5CCA3;
+}
+
+.thumbnail-default {
+    width: 50px;
+    height: 50px;
 }
 
 .article-preview {
@@ -197,21 +199,18 @@ hr {
 }
 
 @media screen and (max-width: 650px) {
-  /* main {
-    width: calc(100vw - 8px);
-  } */
     #Logo-main {
     width: 60px;
     height: 30px;
-    /* position: absolute;
-    left: 24px;
-    top: 24px; */
     padding-top: 24px;
     padding-left: 24px;
-    content: url("mtrnq_logo_butterfly.svg");
+    content: url("mtrnq_logo_mobile.svg");
     }
     main {
-        width: 100vw;
+        width: calc(100vw - 24px);
+    }
+    p {
+        font-size: large;
     }
 }
 @media screen and (max-width: 460px) {
