@@ -173,8 +173,6 @@ section {
     color: #585858;
 }
 
-
-
 hr {
     width: 100%;
     margin: 0px auto;
@@ -234,6 +232,9 @@ hr {
         width: calc(100vw - 24px);
     }
     p {
+        font-size: large;
+    }
+    ul, ol {
         font-size: large;
     }
 }
