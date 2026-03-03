@@ -96,7 +96,7 @@ h2 {
     color: #304050;
 }
 
-p {
+p, ol, ul {
     height: 100%;
     width: 100%;
     line-height: 1.5em;
