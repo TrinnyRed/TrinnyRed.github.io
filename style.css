@@ -242,7 +242,10 @@ hr {
     ul, ol {
         font-size: large;
     }
-}
+    .article-preview {
+        width: 90%;
+    }
+
 @media screen and (max-width: 460px) {
     .MainMenuItem {
         padding: 20px 0px;
