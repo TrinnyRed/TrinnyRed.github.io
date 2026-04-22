@@ -214,15 +214,15 @@ hr {
 
 .PrimaryButton-disabled {
     text-decoration: none;
-    color: #7e8a94;
+    color: #b9c4cc;
     width: 70px;
     height: 20px;
     padding: 10px;
     margin: 20px 20px;
-    background-color: #b1c0cc;
+    background-color: #7b8e9c;
     text-align: center;
     line-height: 20px;
-    border-radius: 50px;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 650px) {
@@ -243,6 +243,9 @@ hr {
         font-size: large;
     }
     .article-preview {
+        width: 90%;
+    }
+    .subtitle {
         width: 90%;
     }
 }
