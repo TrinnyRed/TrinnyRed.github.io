@@ -82,11 +82,11 @@ footer>p {
     padding: 0px;
     font-size: small;
     text-align: center;    
-    color: white;
+    color: #9accff;
 }
 
 .anchor-darkBG {
-    color: white;
+    color: #9accff;;
 }
 
 h1 {
@@ -251,6 +251,16 @@ hr {
     }
     .subtitle {
         width: 90%;
+    }
+    footer {
+        height: 90px;
+        text-align: center;
+        
+    }
+    footer>p {
+        width: 80%;
+        margin-left: 10%;
+
     }
 }
 
