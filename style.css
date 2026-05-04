@@ -182,6 +182,25 @@ section {
     color: #585858;
 }
 
+.contact-card {
+    width: 100%;
+    height: 120px;
+    margin: 16px auto;
+    background-color: #a2d7ff;
+    border: solid 1px #5fafec;
+    border-radius: 10px;
+}
+
+.contact-card > p {
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
+    margin-top: 6%;
+    font-size: small;
+    text-align: center;
+    
+}
+
 hr {
     width: 100%;
     margin: 0px auto;
@@ -260,8 +279,11 @@ hr {
     footer>p {
         width: 80%;
         margin-left: 10%;
-
     }
+    .contact-card > p {
+        margin-top: 5%;
+        font-size: small;
+}
 }
 
 @media screen and (max-width: 460px) {
