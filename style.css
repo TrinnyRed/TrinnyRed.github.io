@@ -201,6 +201,13 @@ section {
     
 }
 
+.embed-pin {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 8px;
+}
+
 hr {
     width: 100%;
     margin: 0px auto;
